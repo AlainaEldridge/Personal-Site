@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Alaina Eldridge Hand Lettering</title>
+  <link href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+	    <a href="index.html">
+	      <img src="img/home-icon.svg" alt="home">
+	      <p>home.</p>
+	    </a>
+	    <a href="index.html#about_me">
+	      <img src="img/about-me-icon.svg" alt="about">
+	      <p>about me.</p>
+	    </a>    
+	    <img src="img/personal-logo.svg" alt="alaina eldridge" class="logo">
+	    <a href="index.html#portfolio">
+	      <img src="img/portfolio-icon.svg" alt="portfolio">
+	      <p>portfolio.</p>
+	    </a>
+	    <a href="">
+	      <img src="img/lettering-icon.svg" alt="lettering">
+	      <p>lettering.</p>
+	    </a>
+</header>
+
+<section>
+	<div class="row">
+  		<div class="column left">
+
+  			<h2>Lettering</h2>
+
+			<img src="img/freehand-lettering-1.jpg" alt="hand painted alphabet, lines, and circles.">
+
+			<p>03/10/2020<span id="dots">...</span><span id="more"> <br>This is my frist attempt at freehanding the letters previously I
+			have been painting over a printed alphabet. This time I just
+			had a lines laid out underneith the glass. I used OneShot
+			lettering enamel in Bright Red thinned with some laquer
+			thinner. The brush I used was my Mack 2179 in size 5.</span></p>
+
+			<button class="button" onclick="readMore()" id="myBtn">Read more</button>
+
+			<script>
+				function readMore() {
+  					var dots = document.getElementById("dots");
+  					var moreText = document.getElementById("more");
+  					var btnText = document.getElementById("myBtn");
+	
+  				if (dots.style.display === "none") {
+    			dots.style.display = "inline";
+    			btnText.innerHTML = "Read more"; 
+    			moreText.style.display = "none";
+  				} else {
+    			dots.style.display = "none";
+    			btnText.innerHTML = "Read less"; 
+    			moreText.style.display = "inline";
+  				}
+				}
+			</script>
+		</div>
+			
+  		<div class="column right">
+  			<div class="stuck">
+  			<img src="img/lettering-tools-Illustration.svg" alt="paint brush and a set square">
+  			</div>
+  		</div>
+	</div>
+
+</section>
+
+</body>
