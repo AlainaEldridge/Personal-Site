@@ -37,6 +37,10 @@ img, svg {
   max-width: 100%;
 }
 
+.social {
+	max-width: 2em;
+}
+
 header img {
   width: 2em;
 }
